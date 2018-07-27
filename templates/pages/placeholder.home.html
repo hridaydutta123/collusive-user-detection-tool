@@ -2,12 +2,113 @@
 {% block title %}Home{% endblock %}
 {% block content %}
 
-<div class="page-header">
-  	<h1>Collusive User Detection Tool</h1>
-  	<label for="usr">Please enter the Twitter user ID or Twitter handle (@handle):</label>
-  		<input type="text" class="form-control" id="usr" placeholder="User ID or Twitter handle"> 
-	</label>
-</div>
-<p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
 
+<div class="page-header">
+	<div class="row">
+
+	  	<h1>Collusive User Detection Tool</h1>
+
+	  	<label for="usr">Please enter the Twitter user ID or Twitter handle (@handle):</label>
+			
+		  		<input type="text" class="form-control .col-xs-8 .col-md-8" id="textbox" placeholder="User ID or Twitter handle"> 
+		</label> <br/>
+	  	<input type="submit" class="btn btn-info" id="submitbutton" value="Check User" />	  	
+	  	<input type="button" class="btn btn-warning" id="resetbutton" value="Reset User" />
+		
+	  	</div>
+
+</div>
+
+<div class="row">
+	<div class="col-sm-12" id="ouralgo" style="display: none;">
+		<div class="panel panel-danger">
+			<div class="panel-heading">
+				<h2 class="panel-title">Our Algorithm Parameters</h2>
+			</div>
+			<div class="panel-body">
+				 <div class="col-md-4">
+	                <fieldset>
+	                    <legend>
+	                        Epsilon
+	                    </legend>
+	                    <p>
+	                        Description is heasos aslidjaslkdj askldalks dlkas dlasjdla sldjasldj 
+	                    </p>
+	                    <div class="radio">
+	                        <input type="radio" name="radio3" id="radio5" value="option1">
+	                        <label for="radio5">
+	                          1000
+	                        </label>
+	                    </div>
+	                    <div class="radio">
+	                        <input type="radio" name="radio3" id="radio6" value="option2">
+	                        <label for="radio6">
+	                            100
+	                        </label>
+	                    </div>
+
+	                    <div class="radio">
+	                        <input type="radio" name="radio3" id="radio6" value="option2">
+	                        <label for="radio6">
+	                            200
+	                        </label>
+	                    </div>
+	                </fieldset>
+            	</div>
+            	<div class="col-md-4">
+	                <fieldset>
+	                    <legend>
+	                        Epsilon
+	                    </legend>
+	                    <p>
+	                        Description is heasos aslidjaslkdj askldalks dlkas dlasjdla sldjasldj 
+	                    </p>
+	                    <div class="radio">
+	                        <input type="radio" name="radio3" id="radio5" value="option1">
+	                        <label for="radio5">
+	                          1000
+	                        </label>
+	                    </div>
+	                    <div class="radio">
+	                        <input type="radio" name="radio3" id="radio6" value="option2">
+	                        <label for="radio6">
+	                            100
+	                        </label>
+	                    </div>
+
+	                    <div class="radio">
+	                        <input type="radio" name="radio3" id="radio6" value="option2">
+	                        <label for="radio6">
+	                            200
+	                        </label>
+	                    </div>
+	                </fieldset>
+            	</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6" id="birdnest" style="display: none;">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Birdnest Parameters</h3>
+			</div>
+			<div class="panel-body">
+				Panel content
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6" id="other" style="display: none;">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 class="panel-title">Panel title</h3>
+			</div>
+			<div class="panel-body">
+				Panel content
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 
+<p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
+ -->
 {% endblock %}

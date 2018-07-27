@@ -14,9 +14,9 @@
 <link type="text/css" rel="stylesheet" href="/static/css/bootstrap-3.1.1.min.css">
 <link type="text/css" rel="stylesheet" href="/static/css/bootstrap-theme-3.1.1.min.css" />
 <link type="text/css" rel="stylesheet" href="/static/css/layout.main.css" />
-<link type="text/css" rel="stylesheet" href="/static/css/main.css" />
 <link type="text/css" rel="stylesheet" href="/static/css/main.responsive.css" />
 <link type="text/css" rel="stylesheet" href="/static/css/main.quickfix.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.css" />
 <!-- /styles -->
 
 <!-- favicons -->
@@ -113,6 +113,27 @@
   Modernizr.load({
     load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
   });
+
+  $("#submitbutton").click( function()
+    {
+         document.getElementById("textbox").disabled = true;
+         
+         $('#ouralgo').toggle();
+         $('#birdnest').toggle();
+         $('#other').toggle();
+
+    }
+  );
+  $("#resetbutton").click( function()
+    {
+         document.getElementById("textbox").disabled = false; 
+
+         $('#ouralgo').toggle();
+         $('#birdnest').toggle();
+         $('#other').toggle();
+
+    }
+  );
   </script>
 
 </body>
