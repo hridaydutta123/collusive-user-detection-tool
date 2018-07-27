@@ -116,12 +116,20 @@
 
   $("#submitbutton").click( function()
     {
-         document.getElementById("textbox").disabled = true;
+        var text = $("#textbox").val();
          
-         $('#ouralgo').toggle();
-         $('#birdnest').toggle();
-         $('#other').toggle();
+        if (text != "") {
+          document.getElementById("textbox").disabled = true;
+          $('#ouralgo').toggle();
+          $('#birdnest').toggle();
+          $('#other').toggle();
+          $('#ouralgobutton').toggle();
 
+        } else {
+          alert("Please enter a Twitter ID or screenname !");
+        }
+        
+        
     }
   );
   $("#resetbutton").click( function()
@@ -131,7 +139,8 @@
          $('#ouralgo').toggle();
          $('#birdnest').toggle();
          $('#other').toggle();
-
+         $('#ouralgobutton').toggle();
+         document.getElementById("textbox").value = "";
     }
   );
   </script>
